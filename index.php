@@ -40,5 +40,39 @@
         </div>
     </div>
 </section>
+
+<section id="drinks" class="drinks-section">
+    <h2>Наши напитки</h2>
+    <div class="drink-circles">
+        <div class="drink-item">
+            <div class="drink-front">
+                <h3>Авторские Bubble Tea</h3>
+                <img src="../assets/images/drink-images/drink_custom.png" alt="Авторский Bubble Tea" class="custom-drink">
+            </div>
+            <div class="drink-back">
+                <p>Уникальные авторские напитки с разными вкусами и добавками.</p>
+            </div>
+        </div>
+        <div class="drink-item">
+            <div class="drink-front">
+                <h3>Bubble Tea с фруктами</h3>
+                <img src="../assets/images/drink-images/drink_fruit.png" alt="Фруктовый Bubble Tea" class="fruit-drink">
+            </div>
+            <div class="drink-back">
+                <p>Освежающие напитки с натуральными фруктами и ягодами.</p>
+            </div>
+        </div>
+        <div class="drink-item">
+            <div class="drink-front">
+                <h3>Необычные тапиоки</h3>
+                <img src="../assets/images/drink-images/drink_tapioca.png" alt="Необычные тапиоки" class="tapioca-drink">
+            </div>
+            <div class="drink-back">
+                <p>Выбор необычных тапиок с разными вкусами и цветами.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
