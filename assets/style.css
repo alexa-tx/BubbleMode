@@ -244,3 +244,56 @@ header nav ul li a:hover {
     left: -30px;
     top: -140px;
 }
+
+.constructor-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.constructor-container {
+    display: flex;
+    gap: 20px;
+}
+
+.constructor-steps {
+    flex: 1;
+}
+
+.constructor-steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.constructor-steps li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.constructor-steps li:hover {
+    background-color: #eee;
+}
+
+.constructor-preview {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.constructor-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}

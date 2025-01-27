@@ -73,6 +73,51 @@
         </div>
     </div>
 </section>
+<section id="constructor" class="constructor-section">
+    <h2>Создайте свой Bubble Tea</h2>
+    <div class="constructor-container">
+        <div class="constructor-steps">
+            <h3>Выберите основу</h3>
+            <ul>
+                <li data-step="1" data-image="../assets/images/drink-images/black-tea.png">Черный чай</li>
+                <li data-step="1" data-image="../assets/images/drink-images/green-tea.png">Зеленый чай</li>
+                <li data-step="1" data-image="../assets/images/drink-images/milk-tea.png">Молочный чай</li>
+            </ul>
+            <h3>Выберите добавку</h3>
+            <ul>
+                <li data-step="2" data-image="../assets/images/drink-images/strawberry.png">Клубника</li>
+                <li data-step="2" data-image="../assets/images/drink-images/mango.png">Манго</li>
+                <li data-step="2" data-image="../assets/images/drink-images/blueberry.png">Черника</li>
+            </ul>
+            <h3>Выберите топпинг</h3>
+            <ul>
+                <li data-step="3" data-image="../assets/images/drink-images/boba.png">Классические шарики тапиоки</li>
+                <li data-step="3" data-image="../assets/images/drink-images/popping-boba.png">Шарики с начинкой</li>
+                <li data-step="3" data-image="../assets/images/drink-images/jelly.png">Желе</li>
+            </ul>
+        </div>
+        <div class="constructor-preview">
+            <img id="preview-image" src="../assets/images/drink-images/default-drink.png" alt="Ваш Bubble Tea">
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const steps = document.querySelectorAll(".constructor-steps li");
+        const previewImage = document.getElementById("preview-image");
+        const selectedSteps = { 1: null, 2: null, 3: null };
+
+        steps.forEach((step) => {
+            step.addEventListener("click", () => {
+                const stepNumber = step.getAttribute("data-step");
+                const image = step.getAttribute("data-image");
+                selectedSteps[stepNumber] = image;
+                const finalImage = Object.values(selectedSteps).filter(Boolean).pop();
+                previewImage.src = finalImage;
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
